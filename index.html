@@ -1,354 +1,196 @@
-<!doctype html>
-<html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Mi portafolio web">
-    <meta name="author" content="Marco Antonio Acevedo Escudero">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Ingeniería Química</title>
 
-    <title>Mi portafolio :)</title>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/materialize/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<!-- Body-->
+<body>
+  <!-- Carrera Dropdown Structure -->
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="#!">Misión y visión</a></li>
+    <li><a href="#!">Perfil de ingreso</a></li>
+    <li><a href="#!">Perfil de egreso</a></li>
+    <li><a href="#!">Plan de estudios</a></li>
+    <li><a href="#!">Calendario escolar</a></li>
+    <li><a href="#!">Actividades complementarias</a></li>
+  </ul>
+  <!-- Alumnos Dropdown Structure -->
+  <ul id="dropdown2" class="dropdown-content">
+    <li><a href="#!">Información adicional</a></li>
+    <li><a href="#!">Reglamentos</a></li>
+    <li><a href="#!">Horarios</a></li>
+    <li><a href="#!">Calendarios de exámenes</a></li>
+    <li><a href="#!">Cuadro de honor</a></li>
+    <li><a href="#!">Eventos académicos</a></li>
+  </ul>
+  <nav class="teal" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="index.html" class="brand-logo"> <i class="material-icons">cloud</i> Logo</a>
+      <ul class="right hide-on-med-and-down">
+        <li class="active"><a href="#">Inicio</a></li>
+        <li><a class="dropdown-trigger" data-target="dropdown1">Carrera <i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-trigger" data-target="dropdown2">Alumnos <i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a href="#">Profesores</a></li>
+      </ul>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/unicons.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Carrera</a></li>
+        <li><a href="#">Alumnos</a></li>
+        <li><a href="#">Profesores</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
 
-    <!-- MAIN STYLE -->
-    <link rel="stylesheet" href="css/tooplate-style.css">
-
-    <!-- CHART -->
-    <link rel="stylesheet" href="css/morris.css">
-    
-  </head>
-  <body>
-
-    <!-- MENU -->
-    <nav class="navbar navbar-expand-sm navbar-light">
-        <div class="container">
-            <a class="navbar-brand" href="index.html"><i class='uil uil-user'></i> ¡Hola!</a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                <span class="navbar-toggler-icon"></span>
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a href="#acerca" class="nav-link"><span data-hover="Acerca de">Acerca de</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#experiencia" class="nav-link"><span data-hover="Experiencia">Experiencia</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#educacion" class="nav-link"><span data-hover="Educación">Educación</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#habilidades" class="nav-link"><span data-hover="Habilidades">Habilidades</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#contacto" class="nav-link"><span data-hover="Contacto">Contacto</span></a>
-                  </li>
-              </ul>
-                </ul>
-
-                <ul class="navbar-nav ml-lg-auto">
-                    <div class="ml-lg-4">
-                      <div class="color-mode d-lg-flex justify-content-center align-items-center">
-                        <i class="color-mode-icon"></i>
-                        Tema
-                      </div>
-                    </div>
-                </ul>
-            </div>
+  <!-- slider -->
+  <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="images/index/background1.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>¡Bienvenido!</h3>
+          <h5 class="light grey-text text-lighten-3">En este sitio encontrarás información acerca de la carrera de Ingeniería Química de la Universidad del Istmo</h5>
+          <a class="waves-effect waves-light btn" >ver más</a>
         </div>
-    </nav>
-
-    <!-- ABOUT -->
-    <section class="acerca full-screen d-lg-flex justify-content-center align-items-center" id="acerca">
-        <div class="container">
-            <div class="row">
-                
-                <div class="col-lg-8 col-md-12 col-12 d-flex align-items-center">
-                    <div class="about-text">
-                        <small class="small-text">¡Bienvendos sean <span class="mobile-block">a mi portafolio web!</span></small>
-                        <h1 class="animated animated-text">
-                            <span class="mr-2">Hola a todos, soy</span>
-                                <div class="animated-info">
-                                    <span class="animated-item">Marco Acevedo :)</span>
-                                    <span class="animated-item">Desarrollador Salesforce Jr.</span>
-                                </div>
-                        </h1> <br>
-
-                        <p>Me llamo Marco Antonio Acevedo Escudero y soy de Mixtequilla, Oaxaca.</p>
-                        <p>Actualmente soy Desarrollador Salesforce Jr. con experiencia en áreas como Platform App Builder y Administrator.</p>
-                        
-                        <div class="custom-btn-group mt-4">
-                          <a href="https://drive.google.com/file/d/1cLGtani7fXf97j2XIEWeTysJy6R56BEP/view?usp=sharing" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i>Descargar Curriculum Vitae</a>
-                          <a href="#contacto" class="btn custom-btn custom-btn-bg custom-btn-link">Estemos en contacto :D</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-12 col-12">
-                    <div class="about-image svg">
-                        <img src="images/undraw/Uploading-amico.svg" class="img-fluid" alt="svg image">
-                    </div>
-                </div>
-
-            </div>
+      </li>
+      <li>
+        <img src="images/index/background2.jpg"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Carrera</h3>
+          <h5 class="light grey-text text-lighten-3">Historia de la carrera. Misión y visión.</h5>
+          <a class="waves-effect waves-light btn" >ver más</a>
         </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section class="experiencia py-5" id="experiencia">
-        <div class="container">
-                
-                <div class="row">
-                  <div class="col-lg-11 text-center mx-auto col-12">
-
-                      <div class="col-lg-8 mx-auto">
-                        <h2>Lugares en los que he estado</h2>
-                      </div>
-
-                      <div class="owl-carousel owl-theme">
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="images/project/project-image01.png" class="img-fluid" alt="academia">
-                          </div>
-                        </div>
-
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="images/project/project-image02.png" class="img-fluid" alt="ntt data">
-                          </div>
-                        </div>
-
-                  </div>
-                </div>
+      </li>
+      <li>
+        <img src="images/index/background3.jpg"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Alumnos</h3>
+          <h5 class="light grey-text text-lighten-3">Horarios escolares, reglamentos, cursos, asesorías, talleres, etc.</h5>
+          <a class="waves-effect waves-light btn" >ver más</a>
         </div>
-    </section>
-
-    <!-- FEATURES -->
-    <section class="educacion py-5 d-lg-flex justify-content-center align-items-center" id="educacion">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-6 col-12">
-                  <h2 class="mb-4">Experiencias</h2>
-
-                    <div class="timeline">
-                        <div class="timeline-wrapper">
-                             <div class="timeline-yr">
-                                  <span>2021</span>
-                             </div>
-                             <div class="timeline-info">
-                                  <h3><span>Xideral México</span><small>Salesforce Academy</small></h3>
-                                  <p>Aprendí elementos básicos de Administrador y Desarrollador de Salesforce.</p>
-                                  <p>Así como Financial Service Cloud.</p>
-                             </div>
-                        </div>
-
-                        <div class="timeline-wrapper">
-                            <div class="timeline-yr">
-                                <span>2021</span>
-                            </div>
-                            <div class="timeline-info">
-                                <h3><span>NTT DATA / Innovalti North America</span><small>Desarrollador Salesforce Jr.</small></h3>
-                                <p>Me encargo de configurar, probar, y desarrollar soluciones a requerimientos de los clientes en Salesforce.</p>
-                                <p>Utilizo entornos de Sandbox con manejo de versiones</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-12">
-                  <h2 class="mb-4 mobile-mt-2">Mi Educación</h2>
-
-                    <div class="timeline">
-                        <div class="timeline-wrapper">
-                             <div class="timeline-yr">
-                                  <span>2017</span>
-                             </div>
-                             <div class="timeline-info">
-                                  <h3><span>Técnico en Programación</span><small></small></h3>
-                                  <p class="font-weight-bold" >Colegio de Estudios Cientificos y Tecnologicos del Estado de Oaxaca</p>
-                                  <p>Plantel 18 "Tehuantepec"</p>
-                             </div>
-                        </div>
-
-                        <div class="timeline-wrapper">
-                            <div class="timeline-yr">
-                                <span>2022</span>
-                            </div>
-                            <div class="timeline-info">
-                                <h3><span>Licenciatura en Ingeniería en Computación</span><small>En curso</small></h3>
-                                <p class="font-weight-bold">Universidad del Istmo</p>
-                                <p>Campus Tehuantepec</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
+      </li>
+      <li>
+        <img src="images/index/background1.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>Profesores</h3>
+          <h5 class="light grey-text text-lighten-3">Conoce más de cerca a los profesores de la carrera.</h5>
+          <a class="waves-effect waves-light btn" >ver más</a>
         </div>
-    </section>
+      </li>
+    </ul>
+  </div>
 
-    <!-- HABILIDADES -->
-    <section class="habilidades py-5" id="habilidades">
-      <div class="container">
-              <br>
-              <div class="row">
-                <div class="col-12 text-center mx-auto">
-                      <h2 class="mb-6">Mis habilidades en Salesforce</h2>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6 col-12">
-                  <h2 class="mb-4">Supermedallas</h2>
-                  <div class="row row-cols-1">
-                    <div class="col">
-                      <div class="text-center">
-                        <img src="images/badges/sec.png" class="rounded" alt="security" width="100px">
-                        <p class="font-weight-bold ">Security Specialist</p>
-                      </div>
-                    </div>
-  
-                    <div class="col">
-                      <div class="text-center">
-                        <img src="images/badges/rep.png" alt="reports" width="100px">
-                        <p class="font-weight-bold">Lightning Experience Reports & Dashboards Specialist</p>
-                      </div>
-                    </div>
-  
-                    <div class="col">
-                      <div class="text-center">
-                        <img src="images/badges/proc.png" alt="process" width="100px">
-                      <p class="font-weight-bold">Process Automation Specialist</p>
-                      </div>
-                    </div>
-                  </div>
-                  
-                </div>
-                <div class="col-lg-6 col-12">
-                  <h2 class="mb-4">Conocimientos</h2>
-                  <div id="chart">
-
-                  </div>
-                </div>
-              </div>
+  <!-- Noticias-->
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Noticias</h4>
+        </div>
       </div>
-  </section>
+      
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card medium">
+            <div class="card-image">
+              <img src="images/index/background2.jpg">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card medium">
+            <div class="card-image">
+              <img src="images/index/background3.jpg">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card medium">
+            <div class="card-image">
+              <img src="images/index/background2.jpg">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+      </div>            
+    </div>
+  </div>
 
-    <!-- CONTACT -->
-    <section class="contacto py-5" id="contacto">
-      <div class="container">
-        <div class="row">
+  <!-- Footer -->
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l5 s12">
+          <h4 class="white-text">Visítanos</h4>
+          <h5 class="white-text">UNISTMO</h5>
+          <p class="white-text">Ciudad Universitaria S/N, Barrio Santa Cruz, 4a. Sección <br> Sto. Domingo Tehuantepec, Oax., México C.P. 70760</p>
           
-          <div class="col-lg-5 mr-lg-5 col-12">
-            <div class="google-map w-100">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6437.824142765013!2d-95.25815104364982!3d16.376349429656404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1656002623425!5m2!1ses!2smx" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-
-            <div class="contact-info d-flex justify-content-between align-items-center py-4 px-lg-5">
-                <div class="contact-info-item">
-                  <h3 class="mb-3 text-white">Encuentráme</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 col-12">
-              <h2 class="mb-4">¿Estás interesado en trabajar juntos? Hay que hablar :)</h2>
-              
-              <div class="row row-cols-2">
-                <div class="col-6">
-                  <div class="text-center">
-                    <a href="mailto:mqrcoann@outlook.com"><img src="images/social/outlook.png" alt="email" width="100px"></a>
-                    <p class="font-weight-bold">E-mail</p>
-                  </div>
-                </div>
-
-                <div class="col-6">
-                  <div class="text-center">
-                    <a href="https://api.whatsapp.com/send?phone=529711521182&text=Hola,%20vi%20tu%20portafolio%20web :)"><img src="images/social/wa.png" alt="whatsapp" width="100px"></a>
-                    <p class="font-weight-bold">What's App</p>
-                  </div>
-                </div>
-
-                <div class="col-6">
-                  <div class="text-center">
-                    <a href="https://www.linkedin.com/in/mqrcoann/"> <img src="images/social/linkedin.png" alt="linkedin" width="100px"></a>
-                    <p class="font-weight-bold ">LinkedIn</p>
-                  </div>
-                </div>
-
-                <div class="col-6">
-                  <div class="text-center">
-                    <a href="https://trailblazer.me/id/mqrcoann"><img src="images/social/trailhead.png" alt="trailhead" width="100px"></a>
-                    <p class="font-weight-bold">Trailhead</p>
-                  </div>
-                </div>
-          </div>
+          <p class="white-text"><i class="tiny material-icons">local_phone</i> Teléfono: (971) 522 4050 extensiones 111 y 123.</p>
 
         </div>
+        <div class="col l3 s12">
+          <h4 class="white-text">Explora</h4>
+          <ul>
+            <li><a class="white-text" href="index.html">Inicio</a></li>
+            <li><a class="white-text" href="carrera.html">Carrera</a></li>
+            <li><a class="white-text" href="alumnos.html">Alumnos</a></li>
+            <li><a class="white-text" href="profesores.html">Profesores</a></li>
+          </ul>
+        </div>
+        <div class="col l4 s12">
+          <h4 class="white-text">Sitios de interés</h4>
+          <ul>
+            <li><a class="white-text" href="#!">Universidad del Istmo</a></li>
+            <li><a class="white-text" href="#!">Servicios Escolares</a></li>
+            <li><a class="white-text" href="#!">Biblioteca</a></li>
+          </ul>
+        </div>
       </div>
-    </section>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        <a class="white-text tooltipped" data-position="top" href="https://mqrcoann.github.io">Créditos</a>
+        <a class="white-text text-lighten-4 right" href="#!">Facebook</a>
+      </div>
+    </div>
+  </footer>
 
-    <!-- FOOTER -->
-     <footer class="footer py-5">
-          <div class="container">
-               <div class="row">
-
-                    <div class="col-lg-12 col-12">                                
-                        <p class="copyright-text text-center">Por Marco Antonio Acevedo Escudero. 2022.</p>
-                        <p class="copyright-text text-center">Diseñado por <a rel="nofollow" href="https://www.facebook.com/tooplate">Tooplate</a></p>
-                    </div>
-                    
-               </div>
-          </div>
-     </footer>
-
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/Headroom.js"></script>
-    <script src="js/jQuery.headroom.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/smoothscroll.js"></script>
-    <script src="js/custom.js"></script>
-    <!-- CHART -->
-    <script src="js/raphael.js"></script>
-    <script src="js/morris.js"></script>
-
-    <script>  
-      Morris.Donut({
-        element: 'chart',
-        data: [
-          {value: 14, label: 'CRM'},
-          {value: 3, label: 'Mobile'},
-          {value: 1, label: 'Data Management'},
-          {value: 17, label: 'General'},
-          {value: 4, label: 'Industries'},
-          {value: 11, label: 'Security'},
-          {value: 16, label: 'Apex'},
-          {value: 3, label: 'App Lifecycle'},
-          {value: 6, label: 'App Logic'},
-          {value: 4, label: 'Integration'},
-          {value: 6, label: 'Database'},
-          {value: 14, label: 'Reporting'}
-        ],
-        colors: [
-          '#ffc200',
-          '#9f8f6e',
-          '#7b9877',
-          '#969088'
-        ],
-        formatter: function (x, data) { return `${x}%`; }
-      });
-    </script>
-
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize/materialize.js"></script>
+  <script src="js/materialize/init.js"></script>
+  
   </body>
 </html>
