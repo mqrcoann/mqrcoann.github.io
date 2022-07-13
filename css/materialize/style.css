@@ -13,6 +13,8 @@ nav .brand-logo {
 
 p {
   line-height: 2rem;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .sidenav-trigger {
