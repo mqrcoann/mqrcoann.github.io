@@ -10,6 +10,10 @@
     $('.tooltipped').tooltip({
       html:   '<h6>Elaborado por:</h6><ul><li><a class="white-text">Marco Antonio Acevedo Escudero</a></li><li><a class="white-text">@mqrcoann</a></li></ul>'
     });
+    $('.tooltipped-normal').tooltip();
+    $('.materialboxed').materialbox();
+    $('.carousel').carousel();
+    $('.tabs').tabs();
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 
