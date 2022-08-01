@@ -27,6 +27,10 @@ p {
   height: auto;
   color: rgba(255,255,255,.9);
 }
+
+.egreso{
+  min-height: 480px;
+}
   .parallax-container .section {
     width: 100%;
   }
