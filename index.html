@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-    <html lang="en">
+    <html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--==================== UNICONS ====================-->
+        <!--==================== ICONS ====================-->
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
         
         <!--==================== SWIPER CSS ====================-->
         <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
@@ -13,13 +15,13 @@
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>My portfolio :)</title>
+        <title>MqrcoAnn - Mis links</title>
     </head>
     <body>
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
-                <a href="#" class="nav__logo">Marco Ann</a>
+                <a href="#" class="nav__logo">MqrcoAnn</a>
                 <!-- barra de navegación -->
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list grid">
@@ -30,22 +32,17 @@
                         </li>
                         <li class="nav__item">
                             <a href="#about" class="nav__link">
-                                <i class="uil uil-user nav__icon"></i> About
+                                <i class="uil uil-user nav__icon"></i> Acerca de
                             </a>
                         </li>
                         <li class="nav__item">
-                            <a href="#skills" class="nav__link">
-                                <i class="uil uil-file-alt nav__icon"></i> Skills
+                            <a href="#otros" class="nav__link">
+                                <i class="uil uil-link nav__icon"></i> Otros Links
                             </a>
                         </li>
                         <li class="nav__item">
-                            <a href="#portfolio" class="nav__link">
-                                <i class="uil uil-scenery nav__icon"></i> Portfolio
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">
-                                <i class="uil uil-message nav__icon"></i> Contact me
+                            <a href="#anime" class="nav__link">
+                                <i class="uil uil-comment-heart nav__icon"></i> Anime
                             </a>
                         </li>
                     </ul>
@@ -70,15 +67,7 @@
                 <div class="home__container container grid">
                     <div class="home__content grid">
                         <div class="home__social">
-                            <a href="https://www.linkedin.com/in/mqrcoann" target="_blank" rel="noopener noreferrer" class="home__social-icon">
-                                <i class="uil uil-linkedin-alt"></i>
-                            </a>
-                            <a href="https://api.whatsapp.com/send?phone=529711521182&text=Hola,%20vi%20tu%20portafolio%20web%20:)" target="_blank" rel="noopener noreferrer" class="home__social-icon">
-                                <i class="uil uil-whatsapp"></i>
-                            </a>
-                            <a href="https://github.com/mqrcoann" target="_blank" rel="noopener noreferrer" class="home__social-icon">
-                                <i class="uil uil-github-alt"></i>
-                            </a>
+                            
                         </div>
 
                         <div class="home__img">
@@ -94,28 +83,58 @@
                                     165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                                     129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                                     -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                    <image class="home__blob-img" x='12' y='18' href="assets/img/perfil.png"/>
+                                    <image class="home__blob-img" x='12' y='18' href="assets/img/home.png"/>
                                 </g>
                             </svg>
+
+                            <div class="card__social" id="card-social">
+                                <div class="card__social-control">
+                                    <!-- toggle button -->
+                                    <div class="card__social-toggle" id="card-toggle">
+                                        <i class="ri-add-line"></i>
+                                    </div>
+                    
+                                    <span class="card__social-text">Mis redes sociales</span>
+                                    <!--card social -->
+                                    <ul class="card__social-list">
+                                        <a href="https://www.twitch.tv/mqrcoann" target="_blank" class="card__social-link">
+                                            <i class="lni lni-twitch"></i>
+                                        </a>
+                    
+                                        <a href="https://www.instagram.com/mqrcoann " target="_blank" class="card__social-link">
+                                            <i class="lni lni-instagram-original"></i>
+                                        </a>
+                    
+                                        <a href="https://facebook.com/mqrcoann" target="_blank" class="card__social-link">
+                                            <i class="lni lni-facebook-original"></i>
+                                        </a>
+                    
+                                        <a href="https://tiktok.com/@mqrcoann" target="_blank" class="card__social-link">
+                                            <i class="lni lni-tiktok-alt"></i>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+
                         </div>
 
                         <div class="home__data">
-                            <h1 class="home__title">Hi, I'm Marco</h1>
-                            <h3 class="home__subtitle">Computer Engineer</h3>
+                            <h1 class="home__title">Hola, soy Marco</h1>
+                            <h3 class="home__subtitle">
+                                <i class="uil uil-map-marker"></i>
+                                Oaxaca, México
+                            </h3>
                             <p class="home__description">
-                                I used to be a Salesforce developer <br> 
-                                but right now I'm focused to become a videogame developer :)
+                                Si te despiertan sentimientos cálidos hacía mi, 
+                                seguramente sea porque estás en llamas.
                             </p>
-                            <a href="#contact" class="button button--flex">
-                                Contact Me<i class="uil uil-message button__icon"></i>
-                            </a>
                         </div>
                     </div>
 
                     <div class="home__scroll">
                         <a href="#about" class="home__scroll-button button--flex">
                             <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                            <span class="home__scroll-name">Scroll Down</span>
+                            <span class="home__scroll-name">Ver Más</span>
                             <i class="uil uil-arrow-down home__scroll-arrow"></i>
                         </a>
                     </div>
@@ -124,559 +143,195 @@
 
             <!--==================== ABOUT ====================-->
             <section class="about section" id="about">
-                <h2 class="section__title">About Me</h2>
-                <span class="section__subtitle">My Introduction</span>
+                <h2 class="section__title">Acerca de Mi</h2>
+                <span class="section__subtitle">Mi Introducción</span>
 
                 <div class="about__container container grid">
-                    <img src="assets/img/about.png" alt="" class="about__img">
+                    <img src="assets/img/Que.png" alt="" class="about__img">
 
                     <div class="about__data">
                         <p class="about__description">
-                            Reciently I finished the Computer Engineer's carrer. <br> <br>
-                            I worked for a while in Salesforce development  in a USA based teamwork. <br> <br>
-                            Today I am working on a profesional thesis for obtain
-                             my bachelors degree that includes a educational videogame for children.
+                            Me llamo Marco, pero pueden decirme cámara. <br><br>
+                        
+                            Me gusta jugar/sufrir en el mejor juego de todos (League of Legends)
+                             y de vez en cuando hago directos. <br>
+                             Main cocina por vocación y adc player por obligación. <br><br>
+                             Mis pj favoritos son rakan, swain y tristana.
+
                         </p>
                         <div class="about__info">
                             <div>
-                                <span class="about__info-title">1</span>
-                                <span class="about__info-name">Year <br> experience</span>
+                                <span class="about__info-title">4</span>
+                                <span class="about__info-name">Años sin<br>salir de oro</span>
                             </div>
 
                             <div>
-                                <span class="about__info-title">2</span>
-                                <span class="about__info-name">Companies <br> worked</span>    
+                                <span class="about__info-title">1k+</span>
+                                <span class="about__info-name">Supports <br> Flameados</span>
+                            </div>
+
+                            <div>
+                                <span class="about__info-title">0</span>
+                                <span class="about__info-name">Afecto <br> femenino</span>    
                         </div>
                     </div>
-                    <div class="about__buttons">
-                        <a href="assets/pdf/Marco-Cv.pdf" target="_blank" class="button button--flex">
-                            Download CV 
-                            <i class="uil uil-download-alt button__icon"></i>
-                        </a>
-                    </div>
+                    <p class="about__description">
+                        Mis cuentas:
+                        <a href="https://www.op.gg/summoners/lan/CamaraFlart" target="_blank">CamaraFlart</a> y
+                        <a href="https://www.op.gg/summoners/lan/lic%20en%20fornicar" target="_blank" rel="noopener noreferrer">lic en fornicar.</a>
+                    </p>
                 </div>
             </section>
 
-            <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
-                <h2 class="section__title">Skills</h2>
-                <span class="section__subtitle">My knowledge</span>
+            <!--==================== OTROS LINKS ====================-->
+            <section class="otros section" id="otros">
+                <h2 class="section__title">Otros Links</h2>
+                <span class="section__subtitle">Cosas que tal vez puedan interesarte</span>
 
-                <div class="skills__container container grid">
-                    <!-- skills 1 salesforce -->
-                    <div class="skills__content">
+                <div class="otros__container container grid">
+                    <!-- link 1 -->
+                    <div class="otros__content">
                         <div>
-                            <i class="uil uil-cloud skills__icon"></i>
-                            <h3 class="skills__title">Salesforce</h3>
+                            <i class="uil uil-whatsapp otros__icon"></i>
+                            <h3 class="otros__title">Grupo de What's App</h3>
+                            <span class="otros__subtitle">Aviso cuando prendo directo y también pasamos momazos.</span>
                         </div>
 
-                        <span class="button button--flex button--small button--link skills__button">
-                            View More
+                        <span class="button button--flex button--small button--link otros__button">
+                            <a href="https://chat.whatsapp.com/DWFpBWpRrvMD3vzsB4PEEg" target="_blank" rel="noopener noreferrer">Enlace</a>
                             <i class="uil uil-arrow-right button__icon"></i>
                         </span>
-
-                        <div class="skills__modal">
-                            <div class="skills__modal-content">
-                                <h4 class="skills__modal-title">Salesforce Developer</h4>
-                                <i class="uil uil-times skills__modal-close"></i>
-
-                                <ul class="skills__modal-skills grid">
-                                    <li class="skills__modal-service">
-                                        <i class="uil uil-check-circle skills__modal-icon"></i>
-                                        <p>Platform App Builder, Administrator and Financial Service Cloud.</p>
-                                    </li>
-                                    <li class="skills__modal-service">
-                                        <i class="uil uil-check-circle skills__modal-icon"></i>
-                                        <p>Apex Language Programming.</p>
-                                    </li>
-                                    <li class="skills__modal-service">
-                                        <i class="uil uil-check-circle skills__modal-icon"></i>
-                                        <p>Flow Builder and Declarative Programming.</p>
-                                    </li>
-                                    <li class="skills__modal-service">
-                                        <i class="uil uil-check-circle skills__modal-icon"></i>
-                                        <p>I worked on configuring, testing and solution development
-                                            to client requirements under SCRUM framework.
-                                        </p>
-                                    </li>
-                                    
-                                </ul>
-                            </div>
-                        </div>
                     </div>
-                    <!-- skills 2 videogame -->
-                    <div class="skills__content">
+                    <!-- link 2 -->
+                    <div class="otros__content">
                         <div>
-                            <i class="uil uil-puzzle-piece skills__icon"></i>
-                            <h3 class="skills__title">Videogame <br> Development </h3>
+                            <i class="uil uil-youtube otros__icon"></i>
+                            <h3 class="otros__title">Mi playlist</h3>
+                            <span class="otros__subtitle">Siempre pongo esta música en mis directos.</span>
                         </div>
 
-                        <span class="button button--flex button--small button--link skills__button">
-                            View More
+                        <span class="button button--flex button--small button--link otros__button">
+                            <a href="https://www.youtube.com/playlist?list=PLHjKEAImAzDirafj-vmMwaEiVlq-VD-nh" 
+                            target="_blank" rel="noopener noreferrer">Enlace</a>
                             <i class="uil uil-arrow-right button__icon"></i>
                         </span>
-
-                        <div class="skills__modal">
-                            <div class="skills__modal-content">
-                                <h4 class="skills__modal-title">Videogame Development</h4>
-                                <i class="uil uil-times skills__modal-close"></i>
-
-                                <ul class="skills__modal-skills grid">
-                                    <li class="skills__modal-service">
-                                        <i class="uil uil-check-circle skills__modal-icon"></i>
-                                        <p>C and C# Programming Language</p>
-                                    </li>
-                                    <li class="skills__modal-service">
-                                        <i class="uil uil-check-circle skills__modal-icon"></i>
-                                        <p>Unity Game Engine</p>
-                                    </li>
-                                    <li class="skills__modal-service">
-                                        <i class="uil uil-check-circle skills__modal-icon"></i>
-                                        <p>2D Game Development</p>
-                                    </li>
-                                    <li class="skills__modal-service">
-                                        <i class="uil uil-check-circle skills__modal-icon"></i>
-                                        <p>I'm still learning :)</p>
-                                    </li>
-                                    
-                                </ul>
-                            </div>
-                        </div>
                     </div>
-                    <!-- skills 3 programming -->
-                    <div class="skills__content">
+                    <!-- link 3 -->
+                    <div class="otros__content">
                         <div>
-                            <i class="uil uil-arrow skills__icon"></i>
-                            <h3 class="skills__title">Programming</h3>
+                            <i class="uil uil-web-grid otros__icon"></i>
+                            <h3 class="otros__title">Mi portafolio</h3>
+                            <span class="otros__subtitle">Por si te interesa saber mi formación profesional.</span>
                         </div>
 
-                        <span class="button button--flex button--small button--link skills__button">
-                            View More
+                        <span class="button button--flex button--small button--link otros__button">
+                            <a href="https://mqrcoann.github.io" target="_blank" rel="noopener noreferrer">Enlace</a>
                             <i class="uil uil-arrow-right button__icon"></i>
                         </span>
-
-                        <div class="skills__modal">
-                            <div class="skills__modal-content">
-                                <h4 class="skills__modal-title">Programming</h4>
-                                <i class="uil uil-times skills__modal-close"></i>
-
-                                <ul class="skills__modal-skills grid">
-                                    <li class="skills__modal-service">
-                                        <i class="uil uil-check-circle skills__modal-icon"></i>
-                                        <p>Java</p>
-                                    </li>
-                                    <li class="skills__modal-service">
-                                        <i class="uil uil-check-circle skills__modal-icon"></i>
-                                        <p>Microsoft Macro Assembler</p>
-                                    </li>
-                                    <li class="skills__modal-service">
-                                        <i class="uil uil-check-circle skills__modal-icon"></i>
-                                        <p>Python</p>
-                                    </li>
-                                    <li class="skills__modal-service">
-                                        <i class="uil uil-check-circle skills__modal-icon"></i>
-                                        <p>Elixir with Phoenix</p>
-                                    </li>
-                                    
-                                </ul>
-                            </div>
-                        </div>
                     </div>
-                    <!-- skills 4 data base -->
-                    <div class="skills__content">
+                    <!-- link 4 -->
+                    <div class="otros__content">
                         <div>
-                            <i class="uil uil-database-alt skills__icon"></i>
-                            <h3 class="skills__title">Data Base</h3>
+                            <i class="uil uil-discord otros__icon"></i>
+                            <h3 class="otros__title">Discord</h3>
+                            <span class="otros__subtitle">Tengo un server, a ver cuando empiezo a usarlo</span>
                         </div>
 
-                        <span class="button button--flex button--small button--link skills__button">
-                            View More
+                        <span class="button button--flex button--small button--link otros__button">
+                            <a href="https://discord.com/invite/KUMx7zXwcq" target="_blank" rel="noopener noreferrer">Enlace</a>
                             <i class="uil uil-arrow-right button__icon"></i>
                         </span>
-
-                        <div class="skills__modal">
-                            <div class="skills__modal-content">
-                                <h4 class="skills__modal-title">Data base</h4>
-                                <i class="uil uil-times skills__modal-close"></i>
-
-                                <ul class="skills__modal-skills grid">
-                                    <li class="skills__modal-service">
-                                        <i class="uil uil-check-circle skills__modal-icon"></i>
-                                        <p>MySQL</p>
-                                    </li>
-                                    <li class="skills__modal-service">
-                                        <i class="uil uil-check-circle skills__modal-icon"></i>
-                                        <p>PosgreSQL</p>
-                                    </li>
-                                    <li class="skills__modal-service">
-                                        <i class="uil uil-check-circle skills__modal-icon"></i>
-                                        <p>SQLite</p>
-                                    </li>
-                                    <li class="skills__modal-service">
-                                        <i class="uil uil-check-circle skills__modal-icon"></i>
-                                        <p>Ecto(Elixir)</p>
-                                    </li>
-                                    <li class="skills__modal-service">
-                                        <i class="uil uil-check-circle skills__modal-icon"></i>
-                                        <p>Salesforce DB</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- skills 5 web -->
-                    <div class="skills__content">
-                        <div>
-                            <i class="uil uil-brackets-curly skills__icon"></i>
-                            <h3 class="skills__title">Web Development</h3>
-                        </div>
-
-                        <span class="button button--flex button--small button--link skills__button">
-                            View More
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-
-                        <div class="skills__modal">
-                            <div class="skills__modal-content">
-                                <h4 class="skills__modal-title">Web Development</h4>
-                                <i class="uil uil-times skills__modal-close"></i>
-
-                                <ul class="skills__modal-skills grid">
-                                    <li class="skills__modal-service">
-                                        <i class="uil uil-check-circle skills__modal-icon"></i>
-                                        <p>HTML 5 and CSS 3</p>
-                                    </li>
-                                    <li class="skills__modal-service">
-                                        <i class="uil uil-check-circle skills__modal-icon"></i>
-                                        <p>JavaScript and PHP</p>
-                                    </li>
-                                    <li class="skills__modal-service">
-                                        <i class="uil uil-check-circle skills__modal-icon"></i>
-                                        <p>Bootstrap Framework</p>
-                                    </li>
-                                    <li class="skills__modal-service">
-                                        <i class="uil uil-check-circle skills__modal-icon"></i>
-                                        <p>MaterializeCSS Framework</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- skills 6 others -->
-                    <div class="skills__content">
-                        <div>
-                            <i class="uil uil-processor skills__icon"></i>
-                            <h3 class="skills__title">Others</h3>
-                        </div>
-
-                        <span class="button button--flex button--small button--link skills__button">
-                            View More
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-
-                        <div class="skills__modal">
-                            <div class="skills__modal-content">
-                                <h4 class="skills__modal-title">Others</h4>
-                                <i class="uil uil-times skills__modal-close"></i>
-
-                                <ul class="skills__modal-skills grid">
-                                    <li class="skills__modal-service">
-                                        <i class="uil uil-check-circle skills__modal-icon"></i>
-                                        <p>Java for Android</p>
-                                    </li>
-                                    <li class="skills__modal-service">
-                                        <i class="uil uil-check-circle skills__modal-icon"></i>
-                                        <p>Xilinx FPGA Verilog</p>
-                                    </li>
-                                    <li class="skills__modal-service">
-                                        <i class="uil uil-check-circle skills__modal-icon"></i>
-                                        <p>Arduino Single-board Computer</p>
-                                    </li>
-                                    <li class="skills__modal-service">
-                                        <i class="uil uil-check-circle skills__modal-icon"></i>
-                                        <p>Microchip PIC Assembly</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 
             </section>
 
-            <!--==================== QUALIFICATION ====================-->
-            <section class="qualification section">
-                <h2 class="section__title">Qualification</h2>
-                <span class="section__subtitle">My personal journey</span>
-
-                <div class="qualification__container container">
-                    <div class="qualification__tabs">
-                        <div class="qualification__button button--flex qualification__active " data-target="#education">
-                            <i class="uil uil-graduation-cap qualification__icon"></i>
-                            Education
-                        </div>
-                        
-                        <div class="qualification__button button--flex"data-target="#work" >
-                            <i class="uil uil-briefcase-alt qualification__icon"></i>
-                            Work
-                        </div>
-                    </div>
-                    <div class="qualification__sections">
-                        <!-- qualification content 1 EDUCATION -->
-                        <div class="qualification__content qualification__active" data-content id="education">
-                            <!--element 1 -->
-                            <div class="qualification__data">
-                                <div>
-                                    <h3 class="qualification__title">Programmer Technician</h3>
-                                    <span class="qualification__subtitle">CECyTEO Plantel 18 "Tehuantepec"</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2015-2017
-                                    </div>
-                                </div>
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <span class="qualification__line"></span>
-                                </div>
-                            </div>
-                            <!--element 2 -->
-                            <div class="qualification__data">
-                                <div></div>
-
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                </div>
-
-                                <div>
-                                    <h3 class="qualification__title">Computer Engineer Bachelor's Degree</h3>
-                                    <span class="qualification__subtitle">Universidad del Istmo Campus Tehuantepec</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2017-2022
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- qualification content 2 WORK -->
-                        <div class="qualification__content" data-content id="work" >
-                            <!--element 1 -->
-                            <div class="qualification__data">
-                                <div>
-                                    <h3 class="qualification__title">Salesforce Academy</h3>
-                                    <span class="qualification__subtitle">Xideral México</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        jul. 2021 - mar. 2022
-                                    </div>
-                                </div>
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <span class="qualification__line"></span>
-                                </div>
-                            </div>
-                            <!--element 2 -->
-                            <div class="qualification__data">
-                                <div></div>
-
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <span class="qualification__line"></span>
-                                </div>
-
-                                <div>
-                                    <h3 class="qualification__title">Salesforce Developer</h3>
-                                    <span class="qualification__subtitle">NTT DATA/Innovalti North America</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        apr. 2022 - jul. 2022
-                                    </div>
-                                </div>
-                            </div>
-                            <!--element 3 -->
-                            <div class="qualification__data">
-                                <div>
-                                    <h3 class="qualification__title">Profesional Development</h3>
-                                    <span class="qualification__subtitle">Career Break</span>
-                                    <span class="qualification__subtitle">Focused on the preparation of a thesis 
-                                        to obtain the bachelor's degree of computer engineer</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        aug. 2022 - present
-                                    </div>
-                                </div>
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-            <!--==================== PORTFOLIO ====================-->
-            <section class="portfolio section" id="portfolio">
-                <h2 class="section__title">Portfolio</h2>
-                <span class="section__subtitle">Some games i made</span>
-                
-                <div class="portfolio__container container swiper">
-                    <div class="swiper-wrapper">
-                        <!-- portofolio 1 -->
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/port1.png" alt="portfolio_img1" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Race Simulator</h3>
-                                <p class="portfolio__description">
-                                    The game generates a random number that determine if a character
-                                     must make a step. <br> Just watch and enjoy :)
-                                </p>
-                                <a href="https://github.com/mqrcoann/assembly-projects/tree/main/games/RandomRacing"
-                                 class="button button--flex button--small portfolio__button" target="_blank">
-                                    Demo
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- portofolio 2 -->
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/port2.png" alt="portfolio_img2" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Cupead Mausoleum Game</h3>
-                                <p class="portfolio__description">
-                                    Don't let them catch you or you lose.
-                                </p>
-                                <a href="https://github.com/mqrcoann/assembly-projects/tree/main/games/Mausoleum" 
-                                class="button button--flex button--small portfolio__button" target="_blank">
-                                    Demo
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- portofolio 3 -->
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/port3.png" alt="portfolio_img3" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Minesweeper with Assembly</h3>
-                                <p class="portfolio__description">
-                                    Classic minesweeper game with many levels of difficult.
-                                </p>
-                                <a href="https://github.com/mqrcoann/assembly-projects/tree/main/games/Minesweeper" 
-                                class="button button--flex button--small portfolio__button" target="_blank">
-                                    Demo
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- portofolio 4 -->
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/port4.png" alt="portfolio_img4" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Cupead Plane Game</h3>
-                                <p class="portfolio__description">
-                                    Low bugdet cuphead's hilda berg level on assembly <br> Don't let them catch you or you lose.
-                                </p>
-                                <a href="https://github.com/mqrcoann/assembly-projects/tree/main/games/Threatenin'%20Zeppelin" 
-                                class="button button--flex button--small portfolio__button" target="_blank">
-                                    Demo
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-button-next">
-                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-                    </div>
-                    <div class="swiper-button-prev">
-                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </section>
-
-            <!--==================== PROJECT IN MIND ====================-->
-            <section class="project section">
-                <div class="project__bg">
-                    <div class="project__container container grid">
-                        <div class="project__data">
-                            <h2 class="project__title">Do you have a job or internship offer?</h2>
-                            <p class="project__description">I'm looking to get into the video game industry</p>
-                            <a href="#contact" class="button button--flex button--white">
-                                Contact Me
-                                <i class="uil uil-message project__icon button__icon"></i>
+            <!--==================== pre ANIME ====================-->
+            <section class="preanime section">
+                <div class="preanime__bg">
+                    <div class="preanime__container container grid">
+                        <div class="preanime__data">
+                            <h2 class="preanime__title">¿Te gusta el Anime?</h2>
+                            <p class="preanime__description">A mí igual, por eso hago contenido de eso tambíen.</p>
+                            <a href="#anime" class="button button--flex button--white">
+                                Muestrame
+                                <i class="uil uil-message preanime__icon button__icon"></i>
                             </a>
                         </div>
 
-                        <img src="assets/img/project.png" alt="project" class="project__img">
+                        <img src="assets/img/yeah.png" alt="preanime" class="preanime__img">
                     </div>
                 </div>
-
             </section>
 
-            <!--==================== CONTACT ME ====================-->
-            <section class="contact section" id="contact">
-                <h2 class="section__title">Contact Me</h2>
-                <span class="section__subtitle">Get in Touch</span>
-
-                <div class="contact__container container grid">
-                    <!-- informacion de contacto -->
-                    <div>
-                        <div class="contact__information">
-                            <i class="uil uil-phone contact__icon"></i>
-
-                            <div>
-                                <h3 class="contact__title">Call Me</h3>
-                                <span class="contact__subtitle">+52 (971) 152 11 82</span>
-                            </div>
+            <!--==================== aninme ====================-->
+            <section class="home section" id="anime">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            
                         </div>
 
-                        <div class="contact__information">
-                            <i class="uil uil-envelope contact__icon"></i>
-                            <div>
-                                <h3 class="contact__title">Email</h3>
-                                <a class="contact__subtitle" href="mailto:mqrcoann@outlook.com">mqrcoann@outlook.com</a>
+                        <div class="home__blob" class="home__img">
+                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                    <image class="home__blob-img" x='12' y='18' href="assets/img/nagatoro.png"/>
+                                </g>
+                            </svg>
+
+                            <div class="card__social" id="anime-social">
+                                <div class="card__social-control">
+                                    <!-- toggle button -->
+                                    <div class="card__social-toggle" id="anime-toggle">
+                                        <i class="ri-add-line"></i>
+                                    </div>
+                    
+                                    <span class="card__social-text">Mis redes sociales</span>
+                                    <!--card social -->
+                                    <ul class="card__social-list">                   
+                                        <a href="https://www.instagram.com/chluch.lu " target="_blank" class="card__social-link">
+                                            <i class="lni lni-instagram-original"></i>
+                                        </a>
+                    
+                                        <a href="https://facebook.com/chalu.anime" target="_blank" class="card__social-link">
+                                            <i class="lni lni-facebook-original"></i>
+                                        </a>
+                    
+                                        <a href="https://tiktok.com/@chluch.lu" target="_blank" class="card__social-link">
+                                            <i class="lni lni-tiktok-alt"></i>
+                                        </a>
+                                        <a href="https://myanimelist.net/animelist/chalu_chalu" target="_blank" class="card__social-link">
+                                            <i class="ri-file-list-3-line"></i>
+                                        </a>
+                                    </ul>
+                                </div>
                             </div>
+
                         </div>
 
-                        <div class="contact__information">
-                            <i class="uil uil-map-marker contact__icon"></i>
-                            <div>
-                                <h3 class="contact__title">Location</h3>
-                                <span class="contact__subtitle">Oaxaca, México</span>
-                            </div>
+                        <div class="home__data">
+                            <h1 class="home__title">Aquí soy Chalu Chalu</h1>
+                            <h3 class="home__subtitle">Average anime enjoyer</h3>
+                            <p class="home__description">
+                                Icons y Edits de Anime. <br>
+                                Waifus todos los días en los Stories. <br>
+                                No apto siempre para todas las edades😈. <br><br>
+                                Actualmente hago Comparaciones de Anime/Manga de Nagatoro. <br>
+                                Proximamente: 2da temporada My Dress-Up Darling. <br> <br>
+                                Ultimamente, he estado más activo aquí😎👍.
+                            </p>
                         </div>
                     </div>
-                    <!--formulario -->
-                    <form action="https://getform.io/f/ef86b807-e8bc-4e15-8881-eb3d39e1ebe8" method="post" class="contact__form grid">
-                        <div class="contact__inputs grid">
-                            <div class="contact__content">
-                                <label for="" class="contact__label">Name</label>
-                                <input type="text" name="name" class="contact__input">
-                            </div>
-                            <div class="contact__content">
-                                <label for="" class="contact__label">Email</label>
-                                <input type="email" name="email" class="contact__input">
-                            </div>
-                        </div>
-                        <div class="contact__content">
-                            <label for="" class="contact__label">Subject</label>
-                            <input type="text" name="subject" class="contact__input">
-                        </div>
-                        <div class="contact__content">
-                            <label for="" class="contact__label">Message</label>
-                            <textarea name="message" id="" cols="0" rows="7" class="contact__input"></textarea>
-                        </div>
-
-                        <div>
-                            <button class="button button--flex contact__button" type="submit">
-                                Send Message
-                                <i class="uil uil-message button__icon"></i>
-                            </button>
-                        </div>
-                    </form>
                 </div>
             </section>
         </main>
@@ -686,32 +341,32 @@
             <div class="footer__bg">
                 <div class="footer__container container grid">
                     <div>
-                        <h1 class="footer__title">Marco Ann</h1>
-                        <span class="footer__subtitle">Computer Engineer</span>
+                        <h1 class="footer__title">MqrcoAnn</h1>
+                        <span class="footer__subtitle"></span>
                     </div>
 
                     <ul class="footer__links">
                         <li>
-                            <a href="#skills" class="footer__link">Skills</a>
+                            <a href="#home" class="footer__link">Gaming</a>
                         </li>
                         <li>
-                            <a href="#portfolio" class="footer__link">Portfolio</a>
+                            <a href="#about" class="footer__link">Acerca de</a>
                         </li>
                         <li>
-                            <a href="#contact" class="footer__link">Contactme</a>
+                            <a href="#anime" class="footer__link">Anime</a>
                         </li>
                     </ul>
 
                     <div class="footer__socials">
-                        <a href="https://www.github.com/mqrcoann" target="_blank" class="footer__social">
-                            <i class="uil uil-github"></i>
+                        <a href="https://www.instagram.com/mqrcoann" target="_blank" class="footer__social">
+                            <i class="uil uil-instagram"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/mqrcoann" target="_blank" class="footer__social">
-                            <i class="uil uil-linkedin"></i>
+                        <a href="https://github.com/mqrcoann" target="_blank" class="footer__social">
+                            <i class="uil uil-github"></i>
                         </a>
                     </div>
                 </div>
-                <p class="footer__copy">&#169; Template by Bedimcode. All right reserved</p>
+                <p class="footer__copy">&#169;Plantilla por Bedimcode.</p>
             </div>
         </footer>
         
