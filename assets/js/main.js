@@ -29,6 +29,102 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
+/*==================== ACCORDION SKILLS ====================*/
+const skillsContent = document.getElementsByClassName("skills__content"),
+        skillsHeader = document.querySelectorAll('.skills__header')
+
+function toggleSkills(){
+    let itemClass = this.parentNode.className
+
+    for (let i = 0; i < skillsContent.length; i++) {
+        skillsContent[i].className = 'skills__content skills__close';       
+    } 
+
+    if(itemClass === 'skills__content skills__close'){
+        this.parentNode.className = 'skills__content skills__open';
+    }
+    
+}
+
+skillsHeader.forEach(n => n.addEventListener('click', toggleSkills))
+
+/*==================== QUALIFICATION TABS ====================*/
+const tabs = document.querySelectorAll('[data-target]'),
+        tabContents = document.querySelectorAll('[data-content]')
+
+tabs.forEach(tab =>{
+    tab.addEventListener('click', () =>{
+        const target = document.querySelector(tab.dataset.target)
+
+        tabContents.forEach(tabContent => {
+            tabContent.classList.remove('qualification__active')
+        })
+        target.classList.add('qualification__active')
+
+        tabs.forEach(tab =>{
+            tab.classList.remove('qualification__active')
+        })
+        tab.classList.add('qualification__active')
+    })
+})
+
+/*==================== skills MODAL ====================*/
+const modalViews = document.querySelectorAll('.skills__modal'),
+        modalBtns = document.querySelectorAll('.skills__button'),
+        modalCloses = document.querySelectorAll('.skills__modal-close')
+
+let modal = function(modalClick){
+    modalViews[modalClick].classList.add('active-modal')
+}  
+
+modalBtns.forEach((modalBtn, i) =>{
+    modalBtn.addEventListener('click', () =>{
+        modal(i)
+    })
+})
+
+modalCloses.forEach((modalClose) => {
+    modalClose.addEventListener('click', () =>{
+        modalViews.forEach((modalView) =>{
+            modalView.classList.remove('active-modal')
+        })
+    })
+})
+
+
+/*==================== PORTFOLIO SWIPER  ====================*/
+var swiperPortfolio = new Swiper(".portfolio__container", {
+    cssMode: true,
+    loop: true,
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+
+/*==================== TESTIMONIAL ====================*/
+var swiperTestimonial = new Swiper(".testimonial__container", {
+    loop: true,
+    grabCursor: true,
+    spaceBetween: 48,
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    breakpoints:{
+        568:{
+            slidesPerView: 2,
+        }
+    }
+  });
+
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
 
@@ -97,26 +193,3 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
-
-/*=============== SHOW SOCIAL NETWORKS ===============*/
-const showSocial = (toggleCard, socialCard) =>{
-    const toggle = document.getElementById(toggleCard),
-        social = document.getElementById(socialCard)
-
-    toggle.addEventListener('click', () =>{
-        //if the animation class exists, we add the down-animation class
-        if(social.classList.contains('animation')){
-            social.classList.add('down-animation')
-
-            //we remove the down-animation class
-            setTimeout(() => {
-                social.classList.remove('down-animation')
-            }, 1000);
-        }
-        //we add the animation class to the div tag with the card__social class
-        social.classList.toggle('animation')
-    })
-}
-
-showSocial('card-toggle','card-social')
-showSocial('anime-toggle', 'anime-social')
